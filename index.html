@@ -13,7 +13,7 @@
         <a href="https://unifor.br/" class="navText">PORTAL UNIFOR</a>
         <label class="switch">
             <input type="checkbox">
-            <span class="slider round"></span>
+            <span id="slider" class="slider round" value="0" onclick="blackSwitch()"></span>
         </label>
     </div>
     <div class="secondNav">
@@ -28,20 +28,20 @@
             <div class="acessBox">
                 <div class="loginItems"> <br>
                     <h5>Matrícula</h5>
-                    <input type="text" id="insertMat" name="matricula" placeholder="digite sua matrícula"><br>
+                    <input type="text" id="insertMat" name="matricula" required placeholder="digite sua matrícula"><br>
                     <br>
                     <h5>Senha</h5>
-                    <input type="text" id="insertPass" name="senha" placeholder="digite sua senha"><br>
+                    <input type="password" id="insertPass" name="senha" required placeholder="digite sua senha"><br>
                     <br>
                 </div>
                 <div class="otherItems">
-                    <button id="pressButton">ACESSAR</button>
+                    <button id="pressButton" onclick="login()">ACESSAR</button>
                 </div>
             </div>
         </div>
     </div>
 </body>
 
-<script type="text/javascript" src="/login.js"></script>
-<script type="text/javascript" src="/unifor.js"></script>
+<script type="text/javascript" src="login.js"></script>
+<script type="text/javascript" src="unifor.js"></script>
 </html>
